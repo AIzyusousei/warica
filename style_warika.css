@@ -1,0 +1,33 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background: #007acc;
+    color: white;
+    padding: 2em;
+    text-align: center;
+  }
+  
+  main {
+    padding: 2em;
+  }
+  
+  section {
+    background: white;
+    margin-bottom: 1.5em;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1em;
+    background: #eee;
+    font-size: 0.9em;
+  }
