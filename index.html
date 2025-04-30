@@ -1,34 +1,25 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My GitHub Page</title>
-  <link rel="stylesheet" href="style_warika.css" />
+  <meta charset="UTF-8">
+  <title>簡単割り勘アプリ</title>
+  <link rel="stylesheet" href="style_warika.css">
 </head>
 <body>
-  <header>
-    <h1>ようこそ！</h1>
-    <p>これはGitHub Pagesで公開されたウェブサイトの例です。</p>
-  </header>
+  <h1>簡単割り勘アプリ</h1>
 
-  <main>
-    <section>
-      <h2>このサイトについて</h2>
-      <p>このページは、HTMLとCSSだけで構成されています。</p>
-    </section>
-    <section>
-      <h2>使い方</h2>
-      <ul>
-        <li>GitHubリポジトリにこのHTMLとCSSファイルを追加する</li>
-        <li>リポジトリの設定から「Pages」を有効にする</li>
-        <li>ブラウザで公開URLを確認する</li>
-      </ul>
-    </section>
-  </main>
+  <div class="container">
+    <label>人数：</label>
+    <input type="number" id="people" min="1" placeholder="人数を入力"><br>
 
-  <footer>
-    <p>&copy; 2025 Kohta Harada</p>
-  </footer>
+    <label>合計金額（円）：</label>
+    <input type="number" id="total" min="0" placeholder="合計金額を入力"><br>
+
+    <button onclick="calculate()">計算する</button>
+
+    <p id="result"></p>
+  </div>
+
+  <script src="script_warika.js"></script>
 </body>
 </html>
